@@ -1,0 +1,21 @@
+#include <iostream>
+#include 
+using namespace std;
+
+int main() {
+    int vet[10] = {3, 56, 8, 92, 45, 12, 67, 23, 87, 34};  
+    int* ptr = vet;  
+    int max = *ptr;  
+
+    
+    for (int i = 0; i < N; ++i) {
+        ptr++;  
+        if (*ptr > max) {
+            max = *ptr;  
+        }
+    }
+
+    cout << "Il massimo dell'array è: " << max << endl;
+    
+    return 0;
+}
